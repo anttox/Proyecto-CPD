@@ -12,7 +12,7 @@ Scapy es una herramienta de Python que permte trabajar con paquetes de red muy f
 - Simmplicidad: En Scapy se puede realizar cn facilidad tareas complejas debido a la manipulación de paquetes de red con pocas líneas de código. Scapy tiene una sintaxis intuituva y permite a los usuarios realizar operaciones avanzadas sin necesidad de una configuración extensa ni de una comprensión profunda de los protocolos de red subyacentes.
 
 ## Pyshark
-Pyshark, por otro lado, es una interfaz de python para Wireshark, conocido por analizar y capturar tráfico de red en tiempo real. Se utiliza para capturar paquetes en una interfaz específica, filtrando el tráfico TCP en los pertos que se asigne. Además, Pyshark facilita la extracción y registro de información relevante de los paquetes capturados en un arhivo CSV o una base de datos SQlite, lo cual es muy útil para análisis posteriores y para identificar patrones sospechozos.
+Pyshark, por otro lado, es una interfaz de python para Wireshark, conocido por analizar y capturar tráfico de red en tiempo real. Se utiliza para capturar paquetes en una interfaz específica, filtrando el tráfico TCP en los pertos que se asigne. Además, Pyshark facilita la extracción y registro de información relevante de los paquetes capturados en un arhivo CSV o una base de datos SQlite (use CSV ya que por el momento la tareas son mas faciles porque las tareas y los datos son pequeños), lo cual es muy útil para análisis posteriores y para identificar patrones sospechozos.
 
 ## Desafíos
 
