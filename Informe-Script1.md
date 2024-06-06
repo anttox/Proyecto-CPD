@@ -26,8 +26,11 @@ Desarrollar un sistema IDS utilizando Scapy y Pyshark presenta varios desafíos.
 3. Exactitud: Identificar amenazas con precisión es esencial para minimizar falsos positivos y negativos, requiriendo un equilibrio entre sensibilidad y especificidad en los filtros y algoritmos de detección.
 
 ## Posibles mejores futuras con paralelización
-
+Para mejorar el rendimiento y la escalabilidad del sistema IDS, se puede implementar paralelización. Esto permite distribuir la carga de trabajo entre múltiples procesadores o núcleos, mejorando la eficiencia y capacidad del sistema. Durante el desarrollo del proyecto me di cuenta de la gran cantidad de tiempo que tenia que esperar para recibir los paquetes o cuando aumenta el volumen de tráfico en la red, el sistema de detección de intrusos debe ser capaz de capturar y analizar más datos sin perder rendimiento, entonces me di cuenta que la mejor forma de solucionar estos problemas potenciales es dividiendo el problemas en partes mas pequeñas que pueden ser ejecutadas simultáneamente en múltiples procesadores o nucleos de procesadores. Las posibles mejoras que tengo en mente son las siguientes:
+1. Utilizar múltiples hilos o procesos para capturar y analizar paquetes simultáneamente, reduciendo el tiempo de procesamiento y mejorando la capacidad de respuesta del sistema.
+2. Implementar una arquitectura distribuida donde varios servidores capturan y analizan el tráfico de red en diferentes segmentos, agregando los resultados en un nodo central para un análisis consolidado.
 
 ## Referencias
 1. Documentación de Scapy, https://scapy.readthedocs.io/en/latest/introduction.html#about-scapy
 2. Documentación de Pyshark, https://github.com/KimiNewt/pyshark
+3. Idea de paralelización, https://cr0hn.gumroad.com/l/libro-scapy
