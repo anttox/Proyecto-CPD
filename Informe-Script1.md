@@ -20,6 +20,13 @@ Pyshark, por otro lado, es una interfaz de python para Wireshark (wrapper), cono
 - Soporte: Pyshark puede decodificar y analizar una amplia gama de protocolos de red, lo que lo hace adecuado para diversas aplicaciones y entornos de red.
 
 ## Desafíos
+Desarrollar un sistema IDS utilizando Scapy y Pyshark presenta varios desafíos. A continuación detallo los principales desafíos que enfrenté durante el desarrollo del proyecto:
+1. Rendimiento: La captura y análisis en tiempo real pueden consumir muchos recursos, lo cual puede afectar el rendimiento del sistema si no se optimiza correctamente.
+2. Escalabilidad: A medida que el tráfico aumenta, es crucial que el sistema pueda escalar para manejar grandes volúmenes de datos sin perder información.
+3. Exactitud: Identificar amenazas con precisión es esencial para minimizar falsos positivos y negativos, requiriendo un equilibrio entre sensibilidad y especificidad en los filtros y algoritmos de detección.
+
+## Posibles mejores futuras con paralelización
+
 
 ## Referencias
 1. Documentación de Scapy, https://scapy.readthedocs.io/en/latest/introduction.html#about-scapy
