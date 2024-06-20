@@ -86,13 +86,18 @@ Al utilizar funciones de kernel, One-Class SVM puede capturar relaciones no line
 
 ### Precisión 
 La precisión es la proporción de verdaderos positivos (TP) entre todos los casos predichos como positivos (TP + FP). Es una medida de cuántas de las predicciones positivas del modelo son realmente correctas. En la detección de anomalías en tráfico de red, alta precisión significa que la mayoría de las alertas de anomalías son verdaderamente anómalas, reduciendo las falsas alarmas.
+
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b40ba241-763d-4700-8414-160ca6303ea2)
 
 ### Recall
 El recall, también conocido como sensibilidad o tasa de verdaderos positivos, es la proporción de verdaderos positivos entre todos los casos que son realmente positivos (TP + FN). Alto recall asegura que la mayoría de las anomalías reales son detectadas, lo cual es crucial para la seguridad de la red.
 
+![imagen2](https://github.com/anttox/Proyecto-CPD/assets/118635410/410c8c25-7732-4aaf-a038-88e4e459df4a)
+
 ### F1-Score
 El F1-Score es la media armónica de la precisión y el recall. Proporciona un balance entre ambos y es útil cuando se necesita un compromiso entre precisión y recall. Proporciona una métrica equilibrada que es útil cuando tanto la precisión como el recall son importantes para evaluar el rendimiento del modelo.
+
+![imagen3](https://github.com/anttox/Proyecto-CPD/assets/118635410/2c3ad6e8-2dea-4721-878a-f82d8b4f4cd2)
 
 
 
