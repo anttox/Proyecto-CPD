@@ -22,6 +22,12 @@
 1. Evaluar la precisión y la tasa de falsos positivos/negativos de los modelos.
 2. Realizar ajustes necesarios para mejorar el rendimiento de los modelos.
 
+## Partes del Código Original Utilizadas
+Del código original que utilicé en el Scrip1, tomé los siguientes elementos y los integré en el nuevo código:
+1. Captura de paquetes: Utilicé la funcionalidad de Pyshark para capturar paquetes en tiempo real.
+2. Almacenamiento de datos en CSV: Implementé la lógica para escribir los datos capturados en un nuevo archivo CSV.
+3. Uso de multiprocessing: Utilicé multiprocessing para ejecutar la captura de paquetes en procesos separados, permitiendo el procesamiento paralelo.
+
 ## Conceptos clave
 
 ### Computación Paralela
@@ -46,6 +52,8 @@ Aumentar el rendimiento mediante la adición de más nodos de computación. Si e
 
 ### Sincronización y Comunicación
 En sistemas distribuidos, la sincronización entre procesos y la comunicación eficiente son cruciales. En el código, los procesos de captura de paquetes y análisis de datos deben sincronizarse correctamente para evitar condiciones de carrera.
+
+## Partes 
 
 
 
