@@ -28,8 +28,8 @@ Del código original que utilicé en el Scrip1, tomé los siguientes elementos y
 2. Almacenamiento de datos en CSV: Implementé la lógica para escribir los datos capturados en un nuevo archivo CSV.
 3. Uso de multiprocessing: Utilicé multiprocessing para ejecutar la captura de paquetes en procesos separados, permitiendo el procesamiento paralelo.
 
-## Almacenamiento de datos en un archivo CSV
-El código original también incluía la lógica para almacenar los datos capturados en un archivo CSV. Esto es importante para persistir los datos de tráfico de red para análisis posteriores.
+### Almacenamiento de datos en un archivo CSV
+El código original tambien incluía la lógica para almacenar los datos capturados en un archivo CSV. Esto es importante para persistir los datos de tráfico de red para análisis posteriores.
 
 ## Conceptos clave
 
@@ -98,6 +98,23 @@ El recall, también conocido como sensibilidad o tasa de verdaderos positivos, e
 El F1-Score es la media armónica de la precisión y el recall. Proporciona un balance entre ambos y es útil cuando se necesita un compromiso entre precisión y recall. Proporciona una métrica equilibrada que es útil cuando tanto la precisión como el recall son importantes para evaluar el rendimiento del modelo.
 
 ![imagen3](https://github.com/anttox/Proyecto-CPD/assets/118635410/2c3ad6e8-2dea-4721-878a-f82d8b4f4cd2)
+
+## ¿Cómo ejecutar el nuevo código?
+
+### Creamos y activamos un entorno virtual
+python3 -m venv detector
+
+source detector/bin/activate
+
+dentro del entorno: sudo /home/anto/Proyecto/myenv/bin/python detectar_anomalias.py
+
+### Instalación de las dependencias necesarias
+pip install scapy pyshark scikit-learn pandas
+
+Scikit-learn: Es una biblioteca de machine learning para Python que incluye herramientas simples y eficientes para minería de datos y análisis de datos. Contiene implementaciones de muchos algoritmos de machine learning, incluyendo Isolation Forest y One-Class SVM.
+
+Pandas: Es una biblioteca de Python para manipulación y análisis de datos. Proporciona estructuras de datos y operaciones para manipular tablas numéricas y series temporales.
+
 
 
 
