@@ -5,3 +5,5 @@
 ## Objetivo del Proyecto
 
 El objetivo principal de este proyecto es crear un sistema eficiente y robusto para la detección de intrusos en redes informáticas. Utilizando herramientas y técnicas de computación paralela y distribuida, implementaremos un sistema que capture tráfico de red, lo analice en tiempo real y detecte anomalías mediante algoritmos de machine learning.
+
+![cayetano](https://github.com/anttox/Proyecto-CPD/assets/118635410/c4d664f2-49f4-4af4-bd21-6d79af831981)
