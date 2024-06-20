@@ -1,4 +1,4 @@
-# Detección de Anomalías en Tráfico de Red
+# Detección de Anomalías en Tráfico de Red - Script2
 
 ## Objetivos
 
