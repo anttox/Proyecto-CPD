@@ -72,10 +72,34 @@ Insoltation forest genera de manera aleatoria la partición de datos mediante á
 
 Pues que nos permite manejar grandes volúmenes de datos rápidamente, lo cual es crucial para analísis de red en tiempor real. La robustez tambien esta presente en este algoritmo ya que no requiere de suposiciones sobre la distribución de datos, lo que permite detectar anomalías en datos de red que pueden tener distribuciones complejas (Fraude financiero). Por ultimo Insolation Forest es altamente escalable con datos grandes, esto es importante en entornos de red donde el volumén de datos es significativo (Ataques DDoS en recursos de AWS).
 
-
-
 ### One-Class SVM
 Este algoritmo se encuentra en una frontera de desición que separa las observaciones normales de los anómalas en un espacio de caracterísiticas de alta dimensión.
+
+One-Class SVM intenta encontrar una frontera de decisión que separe los datos normales de los datos anómalos en un espacio de alta dimensión.
+
+One-Class SVM utiliza la función de kernel para proyectar los datos en un espacio de alta dimensión donde es más fácil separarlos. Comúnmente se utiliza el kernel RBF (Radial Basis Function). Ademas se entrena solo con datos de una clase (datos normales) y se trata de identificar puntos que no se ajustan a la distribución de estos datos como anomalías.
+
+¿Para que nos sirve utilizar funciones de kernel en One-Class SVM?
+Al utilizar funciones de kernel, One-Class SVM puede capturar relaciones no lineales en los datos, lo cual es útil en datos de red que pueden tener relaciones complejas. Y esto es muy efectivo para identificar anomalías durante una buna representación de datos normales.
+
+## Métricas de Evaluación: Precisión, Recall y F1-Score
+
+### Precisión 
+La precisión es la proporción de verdaderos positivos (TP) entre todos los casos predichos como positivos (TP + FP). Es una medida de cuántas de las predicciones positivas del modelo son realmente correctas. En la detección de anomalías en tráfico de red, alta precisión significa que la mayoría de las alertas de anomalías son verdaderamente anómalas, reduciendo las falsas alarmas.
+![image1](
+
+
+### Recall
+El recall, también conocido como sensibilidad o tasa de verdaderos positivos, es la proporción de verdaderos positivos entre todos los casos que son realmente positivos (TP + FN). Alto recall asegura que la mayoría de las anomalías reales son detectadas, lo cual es crucial para la seguridad de la red.
+
+### F1-Score
+El F1-Score es la media armónica de la precisión y el recall. Proporciona un balance entre ambos y es útil cuando se necesita un compromiso entre precisión y recall. Proporciona una métrica equilibrada que es útil cuando tanto la precisión como el recall son importantes para evaluar el rendimiento del modelo.
+
+
+
+
+
+
 
 
 
