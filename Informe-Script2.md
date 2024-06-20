@@ -61,9 +61,16 @@ Utilizaremos dos algoritmos de Machine Learning: Isolation Forest y One-Class SV
 
 ### Insolation Forest
 Este algoritmo se encarga de detectar anomalías construyendo árboles de aislamiento de las observaciones. Las observaciones que requieren menos particiones para ser aisladas son consideradas anomalías.
+
 La idea principal detrás de Isolation Forest es que las anomalías son puntos de datos que son más fáciles de aislar que los puntos normales. El algoritmo construye varios árboles de aislamiento, y la profundidad en la que un punto es aislado se utiliza como medida de su grado de anomalía.
+
 ¿Para que sirve la construcción de estos árboles?
-Insoltation forest genera de manera aleatoria la partición de datos mediante árboles de aislamiento. Las particiones aleatorias dividen los datos hasta que cada punto es aislado. Las anomalías tienden a ser aisladas con menos particiones debido a que están más alejadas de los puntos normales. Ademas Insolation Forest es eficiente tanto en tiempo coo en memoria, ya que la construcción de árboles de aislamiento es un proceso relativamente rápido y los árboles no son profundos. Y de que nos srive que Insolation Forest sea importante?, pues que nos permite manejar grandes volúmenes de datos rápidamente, lo cual es crucial para analísis de red en tiempor real. La robustez tambien esta presente en este algoritmo ya que no requiere de suposiciones sobre la distribución de datos, lo que permite detectar anomalías en datos de red que pueden tener distribuciones complejas (Fraude financiero). Por ultimo Insolation Forest es altamente escalable con datos grandes, esto es importante en entornos de red donde el volumén de datos es significativo (Ataques DDoS en recursos de AWS).
+
+Insoltation forest genera de manera aleatoria la partición de datos mediante árboles de aislamiento. Las particiones aleatorias dividen los datos hasta que cada punto es aislado. Las anomalías tienden a ser aisladas con menos particiones debido a que están más alejadas de los puntos normales. Ademas Insolation Forest es eficiente tanto en tiempo como en memoria, ya que la construcción de árboles de aislamiento es un proceso relativamente rápido y los árboles no son profundos. 
+
+¿A que nos referimos que Insolation Forest es esficiente?
+
+Pues que nos permite manejar grandes volúmenes de datos rápidamente, lo cual es crucial para analísis de red en tiempor real. La robustez tambien esta presente en este algoritmo ya que no requiere de suposiciones sobre la distribución de datos, lo que permite detectar anomalías en datos de red que pueden tener distribuciones complejas (Fraude financiero). Por ultimo Insolation Forest es altamente escalable con datos grandes, esto es importante en entornos de red donde el volumén de datos es significativo (Ataques DDoS en recursos de AWS).
 
 
 
