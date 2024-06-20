@@ -86,8 +86,7 @@ Al utilizar funciones de kernel, One-Class SVM puede capturar relaciones no line
 
 ### Precisión 
 La precisión es la proporción de verdaderos positivos (TP) entre todos los casos predichos como positivos (TP + FP). Es una medida de cuántas de las predicciones positivas del modelo son realmente correctas. En la detección de anomalías en tráfico de red, alta precisión significa que la mayoría de las alertas de anomalías son verdaderamente anómalas, reduciendo las falsas alarmas.
-![image1](
-
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b40ba241-763d-4700-8414-160ca6303ea2)
 
 ### Recall
 El recall, también conocido como sensibilidad o tasa de verdaderos positivos, es la proporción de verdaderos positivos entre todos los casos que son realmente positivos (TP + FN). Alto recall asegura que la mayoría de las anomalías reales son detectadas, lo cual es crucial para la seguridad de la red.
