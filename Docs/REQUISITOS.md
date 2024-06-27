@@ -12,3 +12,5 @@ Actualiza la lista de paquetes e instala las últimas actualizaciones:
 
 ```sh
 !apt update && apt upgrade -y
+!apt install python3 python3-pip -y
+
