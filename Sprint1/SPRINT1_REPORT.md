@@ -56,3 +56,18 @@ Los objetivos del Sprint 1 se cumplieron satisfactoriamente. Se logró desarroll
 * La importancia de configurar correctamente los permisos de red para capturar paquetes.
 * La utilidad de PyShark para analizar detalladamente los paquetes capturados.
 * La necesidad de realizar un manejo adecuado de la base de datos para asegurar la integridad de los datos.
+
+# Plan para el próximo Sprint
+
+## Objetivos del próximo Sprint:
+* Implementar técnicas de machine learning para detectar actividades sospechosas en los datos de tráfico de red.
+* Desarrollar una interfaz de usuario para visualizar los resultados del análisis en tiempo real.
+
+## Tareas planificadas:
+* Integración de algoritmos de machine learning.
+* Desarrollo de la interfaz de usuario.
+* Pruebas y validación del sistema completo.
+
+## Ajustes necesarios:
+* Ajustar la estructura de la base de datos para almacenar resultados de análisis de machine learning.
+* Mejorar el rendimiento del sistema para manejar grandes volúmenes de datos en tiempo real.
