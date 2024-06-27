@@ -16,3 +16,33 @@ El objetivo del Sprint 1 es desarrollar un sistema de captura y análisis de tr�
 * Análisis de paquetes: Equipo de análisis de datos.
 * Almacenamiento en base de datos: Equipo de backend.
 * Documentación: Todos los miembros del equipo colaboran.
+
+# Implementación
+Durante este sprint, se desarrolló un sistema para capturar, analizar y almacenar paquetes de red. Se decidió utilizar Scapy para la captura de paquetes debido a su flexibilidad y capacidad de manejo de paquetes a bajo nivel. Para el análisis de los paquetes capturados, se utilizó PyShark, que permite extraer información detallada de los paquetes. Finalmente, los datos analizados se almacenaron en una base de datos SQLite.
+
+## Métodos:
+* Captura de paquetes: Se utilizó Scapy para capturar paquetes filtrando por puertos 80 y 443.
+* Análisis de paquetes: Se utilizó PyShark para extraer información relevante como la IP de origen, IP de destino y puertos.
+* Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
+
+## Desafíos encontrados:
+* Configuración de permisos para capturar paquetes en tiempo real.
+* Manejo de diferentes formatos de paquetes y extracción de información.
+* Asegurar la integridad y consistencia de los datos almacenados en la base de datos.
+
+# Resultados
+
+## Funcionalidades desarrolladas:
+* Captura de paquetes HTTP y HTTPS.
+* Análisis detallado de los paquetes capturados.
+* Almacenamiento de datos en una base de datos SQLite.
+
+## Pruebas realizadas:
+* Pruebas de captura: Se verificó la correcta captura de paquetes de red.
+* Pruebas de análisis: Se comprobó que la información extraída de los paquetes es precisa.
+* Pruebas de almacenamiento: Se verificó que los datos se almacenan correctamente en la base de datos.
+
+## Demostración de funcionalidades:
+* Captura de pantalla del archivo .pcap generado.
+* Ejemplos de análisis de paquetes en el Jupyter Notebook.
+* Visualización de datos almacenados en SQLite.
