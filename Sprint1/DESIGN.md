@@ -40,7 +40,7 @@ El componente de almacenamiento utiliza SQLite para almacenar la información an
 Inicio -> Conectar a Base de Datos -> Crear Tabla -> Insertar Datos -> Cerrar Conexión -> Fin
 ```
 ### Detalles Técnicos
-***Captura de Paquetes***
+#### Captura de Paquetes
 * Bibliotecas Utilizadas: Scapy, multiprocessing
 * Función Principal:
     * `capturar_paquetes(packet)`: Captura y procesa los paquetes de red.
