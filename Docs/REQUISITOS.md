@@ -1,4 +1,4 @@
-# Instalación para cada Sprint del Proyecto 2: Sistema de detección de intrusos en redes
+# Instalaciones necesarias para desarrollar el Proyecto 2: Sistema de detección de intrusos en redes
 
 ## Requisitos previos generales
 - Ubuntu 18.04 o superior
