@@ -23,3 +23,8 @@ Instala Scapy y PyShark para la captura y análisis de paquetes:
 ```sh
 !pip3 install scapy pyshark
 ```
+### Paso 4: Configuración de permisos para captura de paquetes
+Configura permisos para que Scapy pueda capturar paquetes de red:
+```sh
+!setcap cap_net_raw,cap_net_admin=eip $(readlink -f $(which python3))
+```
