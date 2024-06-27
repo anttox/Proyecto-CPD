@@ -35,5 +35,11 @@ Para ejecutar comandos que requieren permisos elevados dentro de un Jupyter Note
 ```sh
 sudo jupyter notebook --allow-root
 ```
+### Paso 6: Acceder a Jupyter Notebook desde el navegador proporcionado al ejecutar el comando sudo jupyter notebook --allow-root
+Copia y pega la URL en el navegador proporcionada por Jupyter Notebook en la terminal. Será algo como esto:
+```sh
+http://localhost:8888/?token=77e141ac4db96559d16dd3fc45c888099a1778ffad521588
+```
+
 
 
