@@ -32,15 +32,15 @@ Inicio -> Iniciar Análisis -> Capturar Paquete -> Extraer Información del Paqu
 ### Detalles Técnicos
 `parallel_packet_capture.py`
 * Bibliotecas Utilizadas: Scapy, multiprocessing
-    Función Principal:
-        capturar_paquetes(packet): Captura y procesa los paquetes de red.
-        iniciar_captura(): Inicia el proceso de captura de paquetes.
-    Flujo de Ejecución:
-        Se crea un proceso para la captura de paquetes.
-        Se captura el tráfico de red en tiempo real, filtrando por puertos 80 y 443.
-        Se verifica si los paquetes tienen capas IP y TCP, y se imprime la información relevante.
+* Función Principal:
+    * `capturar_paquetes(packet)`: Captura y procesa los paquetes de red.
+    * `iniciar_captura()`: Inicia el proceso de captura de paquetes.
+* Flujo de Ejecución:
+    * Se crea un proceso para la captura de paquetes.
+    * Se captura el tráfico de red en tiempo real, filtrando por puertos 80 y 443.
+    * Se verifica si los paquetes tienen capas IP y TCP, y se imprime la información relevante.
 
-parallel_traffic_analysis.py
+`parallel_traffic_analysis.py`
 
     Bibliotecas Utilizadas: PyShark, csv, multiprocessing
     Función Principal:
