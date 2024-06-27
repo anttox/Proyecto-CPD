@@ -41,11 +41,10 @@ Inicio -> Iniciar Análisis -> Capturar Paquete -> Extraer Información del Paqu
     * Se verifica si los paquetes tienen capas IP y TCP, y se imprime la información relevante.
 
 `parallel_traffic_analysis.py`
-
-    Bibliotecas Utilizadas: PyShark, csv, multiprocessing
-    Función Principal:
-        analizar_paquetes(): Analiza los paquetes capturados y almacena la información en un archivo CSV.
-    Flujo de Ejecución:
-        Se crea un proceso para el análisis de paquetes.
-        Se captura el tráfico de red utilizando PyShark.
-        Se extrae información relevante (IP de origen, IP de destino, protocolo) y se almacena en un archivo CSV.
+* Bibliotecas Utilizadas: PyShark, csv, multiprocessing
+* Función Principal:
+   * `analizar_paquetes()`: Analiza los paquetes capturados y almacena la información en un archivo CSV.
+* Flujo de Ejecución:
+   * Se crea un proceso para el análisis de paquetes.
+   * Se captura el tráfico de red utilizando PyShark.
+   * Se extrae información relevante (IP de origen, IP de destino, protocolo) y se almacena en un archivo CSV.
