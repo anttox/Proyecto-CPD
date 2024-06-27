@@ -41,20 +41,28 @@ Inicio -> Conectar a Base de Datos -> Crear Tabla -> Insertar Datos -> Cerrar Co
 ```
 ### Detalles Técnicos
 #### Captura de Paquetes
-* Bibliotecas Utilizadas: Scapy, multiprocessing
+* Bibliotecas Utilizadas: Scapy
 * Función Principal:
-    * `capturar_paquetes(packet)`: Captura y procesa los paquetes de red.
-    * `iniciar_captura()`: Inicia el proceso de captura de paquetes.
+   * `capture_and_save_packets(packet_count, filename)`: Captura y guarda los paquetes de red en un archivo .pcap.
 * Flujo de Ejecución:
-    * Se crea un proceso para la captura de paquetes.
-    * Se captura el tráfico de red en tiempo real, filtrando por puertos 80 y 443.
-    * Se verifica si los paquetes tienen capas IP y TCP, y se imprime la información relevante.
+   * Se captura el tráfico de red en tiempo real, filtrando por puertos 80 y 443.
+   * Se guarda la captura en un archivo .pcap.
 
-`parallel_traffic_analysis.py`
-* Bibliotecas Utilizadas: PyShark, csv, multiprocessing
+#### Análisis de Tráfico
+* Bibliotecas Utilizadas: PyShark, Pandas
 * Función Principal:
-   * `analizar_paquetes()`: Analiza los paquetes capturados y almacena la información en un archivo CSV.
+   * `analyze_packets(pcap_file)`: Analiza los paquetes capturados y almacena la información en un DataFrame.
 * Flujo de Ejecución:
-   * Se crea un proceso para el análisis de paquetes.
-   * Se captura el tráfico de red utilizando PyShark.
-   * Se extrae información relevante (IP de origen, IP de destino, protocolo) y se almacena en un archivo CSV.
+   * Se abre el archivo .pcap con PyShark.
+   * Se extrae información relevante (IP de origen, IP de destino, protocolo) y se almacena en un DataFrame.
+
+#### Almacenamiento en Base de Datos
+* Bibliotecas Utilizadas: SQLite3, Pandas
+* Función Principal:
+   * `store_packet(packet)`: Almacena los datos analizados en una base de datos SQLite.
+
+Flujo de Ejecución:
+   * Se conecta a la base de datos SQLite.
+   * Se crea la tabla traffic si no existe.
+   * Se insertan los datos en la tabla.
+   * Se cierra la conexión a la base de datos.
