@@ -5,16 +5,14 @@ El objetivo del Sprint 1 es desarrollar un sistema de captura y análisis de tr�
 
 # Planificación
 
-Tareas planificadas:
+## Tareas planificadas:
+* Captura de paquetes de red utilizando Scapy.
+* Análisis de paquetes capturados utilizando PyShark.
+* Almacenamiento de la información analizada en una base de datos SQLite.
+* Documentación del diseño y arquitectura del sistema.
 
-    Captura de paquetes de red utilizando Scapy.
-    Análisis de paquetes capturados utilizando PyShark.
-    Almacenamiento de la información analizada en una base de datos SQLite.
-    Documentación del diseño y arquitectura del sistema.
-
-Asignación de tareas:
-
-    Captura de paquetes: Equipo de redes.
-    Análisis de paquetes: Equipo de análisis de datos.
-    Almacenamiento en base de datos: Equipo de backend.
-    Documentación: Todos los miembros del equipo colaboran.
+## Asignación de tareas:
+* Captura de paquetes: Equipo de redes.
+* Análisis de paquetes: Equipo de análisis de datos.
+* Almacenamiento en base de datos: Equipo de backend.
+* Documentación: Todos los miembros del equipo colaboran.
