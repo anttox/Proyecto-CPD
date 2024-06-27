@@ -18,3 +18,8 @@ Asegúrate de tener Python 3 y pip instalados:
 ```sh
 !apt install python3 python3-pip -y
 ```
+### Paso 3: Instalación de Scapy y PyShark
+Instala Scapy y PyShark para la captura y análisis de paquetes:
+```sh
+!pip3 install scapy pyshark
+```
