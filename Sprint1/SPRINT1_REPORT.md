@@ -1,7 +1,6 @@
 # Introducción
 
-- **Objetivos del Sprint**:
-
+## Objetivos del Sprint:
 El objetivo del Sprint 1 es desarrollar un sistema de captura y análisis de tráfico de red en tiempo real. Este sistema se enfocará en capturar tráfico HTTP y HTTPS, analizar los paquetes capturados y almacenarlos en una base de datos SQLite para su posterior análisis. Estos objetivos se alinean con el objetivo general del proyecto de desarrollar un sistema de detección de intrusos (IDS) para redes informáticas.
 
 # Planificación
@@ -47,3 +46,13 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 * Captura de pantalla del archivo .pcap generado.
 * Ejemplos de análisis de paquetes en el Jupyter Notebook.
 * Visualización de datos almacenados en SQLite.
+
+# Análisis y evaluación
+
+## Comparación con los objetivos del Sprint:
+Los objetivos del Sprint 1 se cumplieron satisfactoriamente. Se logró desarrollar un sistema funcional de captura, análisis y almacenamiento de paquetes de red.
+
+## Lecciones aprendidas:
+* La importancia de configurar correctamente los permisos de red para capturar paquetes.
+* La utilidad de PyShark para analizar detalladamente los paquetes capturados.
+* La necesidad de realizar un manejo adecuado de la base de datos para asegurar la integridad de los datos.
