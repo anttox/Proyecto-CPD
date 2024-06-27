@@ -19,3 +19,13 @@ El componente de captura de paquetes está implementado en el script `parallel_p
 
 ```plaintext
 Inicio -> Iniciar Captura -> Capturar Paquete -> Verificar Capas IP y TCP -> Imprimir Información del Paquete -> Fin
+```
+### Análisis de Tráfico
+
+El componente de análisis de tráfico está implementado en el script parallel_traffic_analysis.py. Este script utiliza la biblioteca PyShark para analizar los paquetes capturados. La información relevante, como la IP de origen, la IP de destino y el protocolo, se extrae y almacena en un archivo CSV. El script utiliza multiprocesamiento para manejar la carga de trabajo de manera eficiente.
+
+**Diagrama de Flujo del Análisis de Tráfico**:
+
+```plaintext
+Inicio -> Iniciar Análisis -> Capturar Paquete -> Extraer Información del Paquete -> Almacenar Información en CSV -> Fin
+```
