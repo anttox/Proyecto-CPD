@@ -15,6 +15,6 @@ Actualiza la lista de paquetes e instala las últimas actualizaciones:
 ```
 ### Paso 2: Instalación de Python y pip
 Asegúrate de tener Python 3 y pip instalados:
-```
+```sh
 !apt install python3 python3-pip -y
 ```
