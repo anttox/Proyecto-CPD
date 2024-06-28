@@ -126,6 +126,7 @@ La segunda parte de la salida muestra los paquetes que se han almacenado en la b
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/f4c67394-f8dd-4ce6-963b-58fc83a2fa8d)
 
 Para poder visualizar los datos del archivo SQLite `network_traffic.db` que contiene la información de los paquetes de red capturados y analizados.
+
 **Actualizamos e instalamos SQLite**
 ```sh
 sudo apt-get update
