@@ -22,6 +22,7 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 
 ## Métodos:
 * Captura de paquetes: Se utilizó Scapy para capturar paquetes filtrando por puertos 80 y 443.
+
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b82a033d-e35d-4dd5-a938-2bc4e7fadbee)
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/a93434bd-446a-4147-82b7-e8368163fe69)
