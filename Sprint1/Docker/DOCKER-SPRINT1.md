@@ -24,3 +24,9 @@ docker build -t network-intrusion-detection-system .
 docker run -p 8888:8888 -v $(pwd):/app network-intrusion-detection-system
 ```
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/dedf8a6e-6162-408d-8c8b-50b29d040c06)
+
+**Descripción del Comando**
+v $(pwd):/app:
+- -v es la opción para montar un volumen.
+- $(pwd) es una expresión de shell que se evalúa como el directorio actual en el que estás trabajando.
+- :/app es el punto de montaje dentro del contenedor Docker.
