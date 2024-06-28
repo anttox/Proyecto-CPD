@@ -1,0 +1,6 @@
+scapy
+pyshark
+nest_asyncio
+pandas
+jupyter
+
