@@ -93,9 +93,36 @@ Al seleccionar un paquete, por ejemplo, el Paquete 1, los detalles del paquete m
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/2a59ed31-506e-429e-9ce8-bdbd576b1862)
 
+**Análisis de Paquetes**
 
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b86ab022-2697-4003-815b-54ba40cd950e)
+
+La primera parte de la salida muestra la captura de paquetes y su análisis utilizando PyShark
+- Protocolo: En este caso, TCP.
+- IP de origen: Dirección IP y puerto del dispositivo que envía el paquete.
+- IP de destino: Dirección IP y puerto del dispositivo que recibe el paquete.
+
+**Almacenamiento de Paquetes**
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/65f6af1d-279b-4746-82d7-cc250bb00858)
+
+La segunda parte de la salida muestra los paquetes que se han almacenado en la base de datos SQLite
+- Protocolo: En este caso, TCP.
+- IP de origen: Dirección IP y puerto del dispositivo que envía el paquete.
+- IP de destino: Dirección IP y puerto del dispositivo que recibe el paquete.
+
+**Verificación de Datos Almacenados**
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/d76889e7-9d69-47c1-bde5-074d3ca9f0b8)
+
+- protocol: Protocolo de la comunicación (TCP).
+- src_addr: Dirección IP de origen.
+- src_port: Puerto de origen.
+- dst_addr: Dirección IP de destino.
+- dst_port: Puerto de destino.
 
 * Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
+
 
 ## Desafíos encontrados:
 * Configuración de permisos para capturar paquetes en tiempo real.
