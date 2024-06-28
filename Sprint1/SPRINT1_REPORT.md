@@ -35,6 +35,7 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8dd09125-6d08-4ae0-90b5-d93c701391b6)
 Podemos observar 10 paquetes capturados, principalmente tráfico TCP y TLSv1.2 y sus respectivos paquetes.
+
 **Paquete 1**:
 - Time: 0.000000
 - Source: 206.247.35.67
@@ -51,7 +52,8 @@ Podemos observar 10 paquetes capturados, principalmente tráfico TCP y TLSv1.2 y
 - Length: 104 bytes
 - Info: Datos de aplicación
 
-**Detalles de un Paquete**
+**Detalles de los paquetes**
+
 Al seleccionar un paquete, por ejemplo, el Paquete 1, los detalles del paquete mostrarán:
 - Ethernet II: Información sobre las direcciones MAC involucradas en la transmisión.
 - Internet Protocol Version 4: Detalles sobre las direcciones IP de origen (206.247.35.67) y destino (192.168.1.11).
