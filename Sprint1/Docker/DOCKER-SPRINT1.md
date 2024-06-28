@@ -16,7 +16,11 @@ Ejecutamos los siguientes comandos en nuestra terminal para construir y ejecutar
 ```sh
 # Construimos la imagen Docker
 docker build -t network-intrusion-detection-system .
+```
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/e0eaf81d-921b-48c2-86e1-51fc492978f8)
 
+```sh
 # Ejecutamos el contenedor Docker
 docker run -p 8888:8888 -v $(pwd):/app network-intrusion-detection-system
 ```
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/dedf8a6e-6162-408d-8c8b-50b29d040c06)
