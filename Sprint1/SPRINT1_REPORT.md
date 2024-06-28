@@ -23,15 +23,15 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 ## Métodos:
 **Captura de paquetes: Se utilizó Scapy para capturar paquetes filtrando por puertos 80 y 443.**
 
-**Código**
+**Código**:
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b82a033d-e35d-4dd5-a938-2bc4e7fadbee)
 
-**Ejecución y Salida**
+**Ejecución y Salida**:
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/a93434bd-446a-4147-82b7-e8368163fe69)
 
-**captured_packets.pcap**
+**captured_packets.pcap**:
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8dd09125-6d08-4ae0-90b5-d93c701391b6)
 Podemos observar 10 paquetes capturados, principalmente tráfico TCP y TLSv1.2 y sus respectivos paquetes.
@@ -83,7 +83,18 @@ Al seleccionar un paquete, por ejemplo, el Paquete 1, los detalles del paquete m
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/2f071bd4-0e4c-4a85-9f54-e8dc977fa394)
 - Muestra una representación hexadecimal de los datos del paquete seleccionado. Esto incluye el contenido real del paquete tal como se capturó en la red.
 
-* Análisis de paquetes: Se utilizó PyShark para extraer información relevante como la IP de origen, IP de destino y puertos.
+**Análisis de paquetes: Se utilizó PyShark para extraer información relevante como la IP de origen, IP de destino y puertos.**
+
+**Código**:
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8189cd19-bc2d-4d2f-b50e-ab2b7f1f035b)
+
+**Ejecución y Salida**:
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/2a59ed31-506e-429e-9ce8-bdbd576b1862)
+
+
+
 * Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
 
 ## Desafíos encontrados:
