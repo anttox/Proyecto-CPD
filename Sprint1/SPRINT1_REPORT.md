@@ -19,14 +19,16 @@ El objetivo del Sprint 1 es desarrollar un sistema de captura y análisis de tr�
 
 # Implementación
 Durante este sprint, se desarrolló un sistema para capturar, analizar y almacenar paquetes de red. Se decidió utilizar Scapy para la captura de paquetes debido a su flexibilidad y capacidad de manejo de paquetes a bajo nivel. Para el análisis de los paquetes capturados, se utilizó PyShark, que permite extraer información detallada de los paquetes. Finalmente, los datos analizados se almacenaron en una base de datos SQLite.
-- **Captura de paquetes**:
-
-![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/482e640c-2730-416d-bc62-e1b8532e2eef)
-
-
 
 ## Métodos:
 * Captura de paquetes: Se utilizó Scapy para capturar paquetes filtrando por puertos 80 y 443.
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/b82a033d-e35d-4dd5-a938-2bc4e7fadbee)
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/a93434bd-446a-4147-82b7-e8368163fe69)
+
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8dd09125-6d08-4ae0-90b5-d93c701391b6)
+
+
 * Análisis de paquetes: Se utilizó PyShark para extraer información relevante como la IP de origen, IP de destino y puertos.
 * Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
 
