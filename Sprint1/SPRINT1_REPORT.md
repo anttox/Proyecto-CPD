@@ -141,6 +141,7 @@ sqlite3 network_traffic.db
 .tables
 ```
 Este comando muestra todas las tablas existentes en la base de datos. En este caso, muestra que hay una tabla llamada traffic.
+
 **Consultamos los Datos**
 ```sh
 SELECT * FROM traffic;
