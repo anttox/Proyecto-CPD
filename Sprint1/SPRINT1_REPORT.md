@@ -28,7 +28,20 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/a93434bd-446a-4147-82b7-e8368163fe69)
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8dd09125-6d08-4ae0-90b5-d93c701391b6)
+**Lista de Paquetes Capturados**
+- No.: Número de secuencia del paquete capturado. En este caso, hay 10 paquetes capturados.
+- Time: Tiempo transcurrido desde el inicio de la captura hasta el momento en que se capturó este paquete.
+- Source: Dirección IP de origen del paquete.
+- Destination: Dirección IP de destino del paquete.
+- Protocol: Protocolo utilizado en el paquete (por ejemplo, TCP, TLSv1.2).
+- Length: Longitud del paquete en bytes.
+- Info: Información adicional sobre el paquete, como los números de puerto de origen y destino, y el tipo de mensaje (por ejemplo, ACK, Application Data).
 
+**Detalles del Paquete Seleccionado**
+- Frame 1: Información sobre el frame de nivel de enlace, como el tamaño en bytes.
+- Ethernet II: Detalles sobre la capa de enlace de datos, como las direcciones MAC de origen y destino.
+- Internet Protocol Version 4: Información sobre la capa de red, como las direcciones IP de origen y destino.
+- Transmission Control Protocol: Información sobre la capa de transporte, como los números de puerto de origen y destino, y los flags TCP (por ejemplo, ACK).
 
 * Análisis de paquetes: Se utilizó PyShark para extraer información relevante como la IP de origen, IP de destino y puertos.
 * Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
