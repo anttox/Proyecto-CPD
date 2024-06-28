@@ -45,7 +45,7 @@ Podemos observar 10 paquetes capturados, principalmente tráfico TCP y TLSv1.2 y
 - Info: Puerto de origen 443 (HTTPS), puerto de destino 47080, ACK
 
 **Paquete 2**:
-- Time: 0.090155
+- Time: 0.000515
 - Source: 206.247.35.67
 - Destination: 192.168.1.11
 - Protocol: TLSv1.2
