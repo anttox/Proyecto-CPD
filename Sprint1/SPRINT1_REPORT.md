@@ -121,8 +121,35 @@ La segunda parte de la salida muestra los paquetes que se han almacenado en la b
 - dst_addr: Dirección IP de destino.
 - dst_port: Puerto de destino.
 
-* Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.
+**Almacenamiento: Se creó una tabla en SQLite para almacenar los datos analizados.**
 
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/f4c67394-f8dd-4ce6-963b-58fc83a2fa8d)
+
+Para poder visualizar los datos del archivo SQLite `network_traffic.db` que contiene la información de los paquetes de red capturados y analizados.
+**Actualizamos e instalamos SQLite**
+```sh
+sudo apt-get update
+sudo apt-get install sqlite3
+```
+**Iniciamos SQLite**
+```sh
+sqlite3 network_traffic.db
+```
+**Listamos las Tablas**
+```sh
+.tables
+```
+Este comando muestra todas las tablas existentes en la base de datos. En este caso, muestra que hay una tabla llamada traffic.
+**Consultamos los Datos**
+```sh
+SELECT * FROM traffic;
+```
+La tabla traffic contiene la siguiente estructura:
+- protocol: El protocolo utilizado, que es TCP en todos los casos mostrados.
+- src_addr: La dirección IP de origen. Por ejemplo, 162.159.133.234, 192.168.1.11, etc.
+- src_port: El puerto de origen. Por ejemplo, 443, 38048, 48930, etc.
+- dst_addr: La dirección IP de destino. Por ejemplo, 192.168.1.11, 140.82.113.25, etc.
+- dst_port: El puerto de destino. Por ejemplo, 443, 47080, etc.
 
 ## Desafíos encontrados:
 * Configuración de permisos para capturar paquetes en tiempo real.
