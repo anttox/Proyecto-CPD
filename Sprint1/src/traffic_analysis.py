@@ -1,9 +1,6 @@
 import pyshark
 import pandas as pd
-import nest_asyncio
-
-# Permitir que el bucle de eventos de asyncio funcione en Jupyter Notebook
-nest_asyncio.apply()
+import sqlite3
 
 # Función para analizar paquetes capturados utilizando PyShark
 def analyze_packets(pcap_file):
@@ -33,5 +30,36 @@ def analyze_packets(pcap_file):
 pcap_file = 'sprint1/data/captured_packets.pcap'  # Nombre del archivo pcap
 df_packets = analyze_packets(pcap_file)
 
-# Mostrar los datos analizados en Jupyter Notebook
-display(df_packets.head())
+# Crear base de datos y tabla
+conn = sqlite3.connect('sprint1/data/network_traffic.db')
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS traffic
+             (protocol TEXT, src_addr TEXT, src_port INTEGER, dst_addr TEXT, dst_port INTEGER)''')
+
+def store_packet(packet):
+    try:
+        protocol = packet['protocol']
+        src_addr = packet['src_addr']
+        src_port = packet['src_port']
+        dst_addr = packet['dst_addr']
+        dst_port = packet['dst_port']
+        c.execute("INSERT INTO traffic (protocol, src_addr, src_port, dst_addr, dst_port) VALUES (?, ?, ?, ?, ?)",
+                  (protocol, src_addr, src_port, dst_addr, dst_port))
+        conn.commit()
+        print(f"Stored packet: {protocol} {src_addr}:{src_port} -> {dst_addr}:{dst_port}")
+    except AttributeError as e:
+        print(f"Packet skipped: {e}")
+
+# Almacenar los datos analizados
+for index, row in df_packets.iterrows():
+    store_packet(row)
+
+# Verificar los datos almacenados
+df = pd.read_sql_query("SELECT * FROM traffic", conn)
+print(df)
+
+# Mostrar los datos en la terminal
+print(df.head())
+
+# Cerrar la conexión a la base de datos
+conn.close()
