@@ -28,7 +28,9 @@ Durante este sprint, se desarrolló un sistema para capturar, analizar y almacen
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/a93434bd-446a-4147-82b7-e8368163fe69)
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/8dd09125-6d08-4ae0-90b5-d93c701391b6)
+
 **Lista de Paquetes Capturados**
+![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/83ebbc95-6e5a-4283-a916-7cb2245047c4)
 - No.: Número de secuencia del paquete capturado. En este caso, hay 10 paquetes capturados.
 - Time: Tiempo transcurrido desde el inicio de la captura hasta el momento en que se capturó este paquete.
 - Source: Dirección IP de origen del paquete.
