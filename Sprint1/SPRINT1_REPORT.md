@@ -58,6 +58,7 @@ Al seleccionar un paquete, por ejemplo, el Paquete 1, los detalles del paquete m
 - Ethernet II: Información sobre las direcciones MAC involucradas en la transmisión.
 - Internet Protocol Version 4: Detalles sobre las direcciones IP de origen (206.247.35.67) y destino (192.168.1.11).
 - Transmission Control Protocol: Información sobre los puertos (443 -> 47080) y el estado del paquete (ACK).
+
 **Lista de Paquetes Capturados**
 
 ![imagen](https://github.com/anttox/Proyecto-CPD/assets/118635410/83ebbc95-6e5a-4283-a916-7cb2245047c4)
