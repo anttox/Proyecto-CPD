@@ -102,26 +102,44 @@ Se realizaron pruebas utilizando datos de prueba con anomalías sintéticas para
 
 **1. Evaluación de Isolation Forest con contaminación=0.05**:
 
-Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
-Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
-Interpretación: El modelo tiene alta precisión para detectar tráfico normal pero baja recall para detectar anomalías, lo que significa que detecta pocas anomalías.
-Evaluación de Isolation Forest con contaminación=0.1:
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/0fa13b9f-b498-45b1-aa93-43e111d589ef)
 
-Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
-Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
-Interpretación: Resultados similares a la contaminación=0.05, indicando un comportamiento consistente.
-Evaluación de Isolation Forest con contaminación=0.15:
+- Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
+- Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
+- Interpretación: El modelo tiene alta precisión para detectar tráfico normal pero baja recall para detectar anomalías, lo que significa que detecta pocas anomalías.
 
-Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
-Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
-Interpretación: Aumentar la contaminación mejora la recall para las anomalías, aunque sigue siendo baja. La precisión para detectar tráfico normal sigue siendo alta.
-Evaluación de Isolation Forest con datos aumentados
-Evaluación de Isolation Forest con datos aumentados:
-Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
-Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
-Interpretación: Los resultados son consistentes con los obtenidos con una contaminación del 0.15, lo que sugiere que el modelo maneja bien los datos aumentados.
-Evaluación de One-Class SVM con datos aumentados
-Evaluación de One-Class SVM con datos aumentados:
-Clase 0 (normal): precision 1.00, recall 1.00, f1-score 1.00.
-Clase 1 (anomalía): precision 1.00, recall 0.95, f1-score 0.97.
-Interpretación: One-Class SVM muestra un rendimiento superior en comparación con Isolation Forest, con una precisión y recall muy altas para ambas clases. Esto indica que el modelo SVM es capaz de detectar casi todas las anomalías con alta precisión.
+**2. Evaluación de Isolation Forest con contaminación=0.1**:
+
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/610c4f6d-9699-4ff6-8aeb-4ab9e6423e19)
+
+- Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
+- Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
+- Interpretación: Resultados similares a la contaminación=0.05, indicando un comportamiento consistente.
+
+**3. Evaluación de Isolation Forest con contaminación=0.15**:
+
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/d87a4d49-b6b1-4061-a2a4-898dd587d23a)
+
+- Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
+- Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
+- Interpretación: Aumentar la contaminación mejora la recall para las anomalías, aunque sigue siendo baja. La precisión para detectar tráfico normal sigue siendo alta.
+
+**Evaluación de Isolation Forest con datos aumentados**
+
+**4. Evaluación de Isolation Forest con datos aumentados**:
+
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/c27f1928-28d5-4a93-b360-cb3c24bf40df)
+
+- Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
+- Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
+- Interpretación: Los resultados son consistentes con los obtenidos con una contaminación del 0.15, lo que sugiere que el modelo maneja bien los datos aumentados.
+
+**Evaluación de One-Class SVM con datos aumentados**
+
+**5. Evaluación de One-Class SVM con datos aumentados**:
+
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/686a40db-0b5f-4292-87ec-09692a9ae95a)
+
+- Clase 0 (normal): precision 1.00, recall 1.00, f1-score 1.00.
+- Clase 1 (anomalía): precision 1.00, recall 0.95, f1-score 0.97.
+- Interpretación: One-Class SVM muestra un rendimiento superior en comparación con Isolation Forest, con una precisión y recall muy altas para ambas clases. Esto indica que el modelo SVM es capaz de detectar casi todas las anomalías con alta precisión.
