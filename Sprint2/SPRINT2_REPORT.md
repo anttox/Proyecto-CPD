@@ -1,7 +1,7 @@
 # Introducción
 
 ## Objetivos del Sprint
-El objetivo de este sprint fue mejorar la detección de anomalías en el tráfico de red mediante el uso de modelos de aprendizaje automático. En particular, se buscó entrenar y evaluar modelos de Isolation Forest y One-Class SVM utilizando datos capturados y analizados en tiempo real.
+Desarrollar un sistema de detección de intrusos (IDS) para redes informáticas, capaz de capturar y analizar tráfico de red en tiempo real para identificar actividades sospechosas utilizando técnicas de machine learning.
 
 # Planificación
 
@@ -55,91 +55,59 @@ Se realizaron pruebas utilizando datos de prueba con anomalías sintéticas para
 
 **Código**
 
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/9d522427-8a1f-4f65-85a5-13a5ca8ba95e)
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/399e126b-4e55-400c-b06b-610a607f432a)
+
+De todas maneras el código se puede encontrar y ejecutar en el directorio src.
 
 **Ejecución y Salida**
 
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/cdec75c6-aa9b-4d61-85d9-8d80af9e63c2)
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/ec447c8d-243a-42df-8de7-3f60c27fedfd)
 
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/f6d3f528-87ff-4394-9e38-4e127c0abb9f)
+**Preprocesamiento de datos**
 
-**Preprocesamiento de Datos**
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/14459947-efa8-4deb-b8ee-7ec212ea5a7a)
 
-**1. Cargar datos desde SQLite**:
+Descripción: Limpiar y preprocesar los datos capturados para la preparación de los modelos de machine learning. Extraer características relevantes de los paquetes (por ejemplo, tamaño del paquete, tiempo entre paquetes, número de paquetes por segundo).
 
-- Se cargan los datos desde una base de datos SQLite utilizando la función load_data_from_db.
-- La salida muestra los primeros cinco registros de los datos cargados, con las columnas protocol, src_addr, src_port, dst_addr, y dst_port.
+**Resultados:**
 
-**Entrenamiento de Modelos de Machine Learning**
+- Datos preprocesados y estructurados listos para el modelado.
+- Implementación de funciones para convertir direcciones IP a enteros, calcular el tamaño de los paquetes y el intervalo de tiempo entre ellos.
 
-**2. Aumentar la proporción de anomalías en los datos de entrenamiento**:
+**Entrenamiento de modelos de machine learning**
 
-- Se generan 100 ejemplos de anomalías uniformemente distribuidas entre -10 y 10.
-- Estas anomalías se agregan a los datos preprocesados para formar X_train_with_anomalies y y_train_with_anomalies.
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/9982a3a6-d616-42e2-ac05-3e8ee613a4ac)
 
-**3.Entrenamiento de Isolation Forest con diferentes parámetros de contaminación**:
+Descripción: Seleccionar algoritmos de detección de anomalías (por ejemplo, Isolation Forest, One-Class SVM). Entrenar los modelos utilizando scikit-learn y validar los resultados con un conjunto de datos etiquetados.
 
-- Se entrena el modelo Isolation Forest con tres diferentes valores de contaminación: 0.05, 0.1, y 0.15.
-- Se imprime un reporte de clasificación para cada valor de contaminación, el cual incluye métricas de precisión, recall y f1-score.
+**Resultados:**
 
-**Evaluación de Modelos**
+- Modelos de Isolation Forest y One-Class SVM entrenados.
+- Ajuste de hiperparámetros utilizando GridSearchCV para optimizar el rendimiento de los modelos.
 
-**4. Generar datos de prueba incluyendo anomalías sintéticas**:
+**Evaluación de modelos**
 
-- Se generan datos de prueba normales (X_test_normal) y anomalías sintéticas.
-- Estas anomalías se agregan a los datos de prueba normales para formar X_test_anomalies y y_test_anomalies.
+![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/6c5f75b7-1808-41c3-bd2b-5805e409d92c)
 
-**5. Evaluar Isolation Forest con diferentes valores de contaminación**:
+Descripción: Evaluar la precisión y la tasa de falsos positivos/negativos de los modelos. Realizar ajustes necesarios para mejorar el rendimiento de los modelos.
 
-- Para cada valor de contaminación (0.05, 0.1, 0.15), se muestra un reporte de clasificación que evalúa el rendimiento del modelo Isolation Forest.
-- Las métricas de evaluación incluyen:
-  - precision: Proporción de verdaderos positivos entre los elementos clasificados como positivos.
-  - recall: Proporción de verdaderos positivos entre todos los elementos que son realmente positivos.
-  - f1-score: La media armónica de precisión y recall.
-  - support: El número de ocurrencias de cada clase en el conjunto de prueba.
+**Resultados:**
 
-**Evaluación de Isolation Forest con diferentes valores de contaminación**
+- Métricas de evaluación de los modelos (Precision, Recall, F1 Score, Accuracy).
+- Comparación del rendimiento entre Isolation Forest y One-Class SVM.
+- Ajustes realizados para mejorar la precisión y reducir los falsos positivos.
 
-**1. Evaluación de Isolation Forest con contaminación=0.05**:
+# Entregables
+- Modelos entrenados de detección de anomalías.
+- Código para el entrenamiento y evaluación de los modelos.
+- Informe sobre el rendimiento y la precisión de los modelos implementados.
 
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/0fa13b9f-b498-45b1-aa93-43e111d589ef)
+# Conclusiones
+Durante este sprint, se logró implementar y evaluar algoritmos de machine learning para la detección de anomalías en el tráfico de red. Los modelos entrenados demostraron una capacidad significativa para identificar actividades sospechosas con una buena precisión y una baja tasa de falsos positivos. Los resultados obtenidos sentaron las bases para la optimización y el análisis en tiempo real en el siguiente sprint.
 
-- Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
-- Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
-- Interpretación: El modelo tiene alta precisión para detectar tráfico normal pero baja recall para detectar anomalías, lo que significa que detecta pocas anomalías.
+# Próximos pasos
+En el próximo Sprint 3, se optimizará el sistema para análisis en tiempo real utilizando técnicas de paralelismo y asincronía. Además, se preparará una presentación detallada de los hallazgos y se desarrollará una interfaz de usuario para la visualización de las detecciones de anomalías.
 
-**2. Evaluación de Isolation Forest con contaminación=0.1**:
 
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/610c4f6d-9699-4ff6-8aeb-4ab9e6423e19)
 
-- Clase 0 (normal): precision 0.96, recall 1.00, f1-score 0.98.
-- Clase 1 (anomalía): precision 1.00, recall 0.20, f1-score 0.33.
-- Interpretación: Resultados similares a la contaminación=0.05, indicando un comportamiento consistente.
 
-**3. Evaluación de Isolation Forest con contaminación=0.15**:
-
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/d87a4d49-b6b1-4061-a2a4-898dd587d23a)
-
-- Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
-- Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
-- Interpretación: Aumentar la contaminación mejora la recall para las anomalías, aunque sigue siendo baja. La precisión para detectar tráfico normal sigue siendo alta.
-
-**Evaluación de Isolation Forest con datos aumentados**
-
-**4. Evaluación de Isolation Forest con datos aumentados**:
-
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/c27f1928-28d5-4a93-b360-cb3c24bf40df)
-
-- Clase 0 (normal): precision 0.97, recall 1.00, f1-score 0.99.
-- Clase 1 (anomalía): precision 1.00, recall 0.40, f1-score 0.57.
-- Interpretación: Los resultados son consistentes con los obtenidos con una contaminación del 0.15, lo que sugiere que el modelo maneja bien los datos aumentados.
-
-**Evaluación de One-Class SVM con datos aumentados**
-
-**5. Evaluación de One-Class SVM con datos aumentados**:
-
-![image](https://github.com/anttox/Proyecto-CPD/assets/118635410/686a40db-0b5f-4292-87ec-09692a9ae95a)
-
-- Clase 0 (normal): precision 1.00, recall 1.00, f1-score 1.00.
-- Clase 1 (anomalía): precision 1.00, recall 0.95, f1-score 0.97.
-- Interpretación: One-Class SVM muestra un rendimiento superior en comparación con Isolation Forest, con una precisión y recall muy altas para ambas clases. Esto indica que el modelo SVM es capaz de detectar casi todas las anomalías con alta precisión.
