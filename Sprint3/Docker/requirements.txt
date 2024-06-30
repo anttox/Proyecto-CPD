@@ -1,0 +1,8 @@
+Flask
+scapy
+pandas
+numpy
+scikit-learn
+nest_asyncio
+matplotlib
+
