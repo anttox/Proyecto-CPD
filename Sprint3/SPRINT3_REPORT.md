@@ -74,3 +74,46 @@ python
 
 - Descripción: Utiliza hilos para ejecutar la captura de paquetes y la detección de anomalías en paralelo con el servidor web Flask. Esto garantiza que el sistema pueda procesar paquetes y actualizar la interfaz web en tiempo real.
 
+## Desafíos encontrados:
+
+- Configurar el entorno de Docker para permitir la captura de tráfico de red fue un desafío debido a restricciones de permisos y disponibilidad de dispositivos de red en contenedores Docker.
+- Asegurar el rendimiento y la eficiencia del sistema con múltiples procesos y tareas asíncronas requirió varias iteraciones y ajustes finos.
+
+# Resultados
+
+## Funcionalidades desarrolladas:
+
+- Captura y análisis de tráfico de red en tiempo real utilizando técnicas de paralelismo y análisis asíncrono.
+- Interfaz de usuario con Flask para visualizar detecciones de anomalías en tiempo real.
+
+## Pruebas realizadas:
+
+- Se realizaron pruebas unitarias para verificar la funcionalidad de los módulos de captura y análisis de tráfico.
+- Pruebas de integración para asegurar que todos los componentes del sistema funcionen correctamente juntos.
+- Pruebas de rendimiento para evaluar la capacidad del sistema bajo condiciones de alta carga.
+
+
+## Comparación con los objetivos del Sprint:
+
+Los objetivos del sprint3 fueron alcanzados exitosamente. Se mejoró el rendimiento del sistema y se desarrolló una interfaz de usuario efectiva para la visualización de resultados.
+
+## Lecciones aprendidas:
+
+- La importancia de la gestión eficiente de recursos en aplicaciones en tiempo real.
+- La necesidad de realizar pruebas exhaustivas en entornos de desarrollo similares a los de producción para evitar problemas de despliegue.
+
+# Plan para el próximo Sprint
+
+## Objetivos del próximo Sprint:
+
+Este es el sprint final, por lo que los próximos pasos incluyen la preparación para la presentación final y la documentación del proyecto.
+
+## Tareas planificadas:
+
+- Revisión y refinamiento del código.
+- Preparación de la documentación final del proyecto.
+- Ensayos de la presentación final.
+
+## Ajustes necesarios:
+
+No se requieren ajustes significativos en la planificación del proyecto, solo asegurar que toda la documentación y la presentación estén listas para la fecha final.
